@@ -90,8 +90,13 @@ window.PORTFOLIO_CONTENT = {
   involvement: {
     sectionTitle: `Engineering Involvement`,
     tag: `AIAA · Hands-On Build`,
-    title: `High-Power Rocketry — Level 1 Certified`,
-    description: `Participated in the build and preparation of a high-power rocket through AIAA, gaining experience taking a physical aerospace project from assembly toward launch. Earned Level 1 high-power rocketry certification.`,
+    title: `High-Power Rocketry & Level 1 Program`,
+    description: `Participating in the build and preparation of a high-power rocket through AIAA, gaining experience taking a physical aerospace project from assembly toward launch. Currently working toward earning Level 1 high-power rocketry certification.`,
+    payload: {
+      tag: `AIAA · Mechanical Design in Progress`,
+      title: `ArtUMis 3 Self-Leveling Payload`,
+      description: `Developing a self-leveling imaging payload with AIAA, using a bearing-supported sled with its center of gravity below the rotation axis to level the system after landing. The preliminary CAD assembly helps us refine component placement and mass balance while planning a telescoping, rotating camera mount.`,
+    },
   },
 
   coursework: {
