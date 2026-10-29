@@ -20,7 +20,7 @@ window.PORTFOLIO_CONTENT = {
     category: `PERSONAL PROJECT`,
     tools: `SOLIDWORKS + FEA`,
     title: `Reverse-Engineered Suspension Redesign`,
-    subtitle: `Mazda CX-3 front lower control arm, reverse-engineered, then redesigned for rally-spec. FOS improved from 0.6 to 2.3 at equal mass`,
+    subtitle: `Mazda CX-3 front lower control arm, reverse-engineered, then redesigned for rally-spec. Minimum representative FOS (excluding singularities) improved from 0.6883 to 2.098 at effectively equal mass`,
     overview: `I hand-measured and photographed the front lower control arm off my dad's 2021 Mazda CX-3, then rebuilt it in SolidWorks. Baseline FEA under a worst-case cornering load showed the OEM part exceeding yield strength in several areas, so I redesigned it for rally use with a stronger alloy, added cross-bracing, and lightening holes to offset the added mass, then validated the result against the original with FEA.`,
     originCaption: `The project started when my dad and I were repairing his crashed CX-3 this summer, which gave me hands-on access to a real suspension component.`,
 
@@ -35,7 +35,7 @@ window.PORTFOLIO_CONTENT = {
       },
       {
         title: `Compare baseline & rally load cases`,
-        description: `Established the OEM stress pattern under estimated worst-case driving conditions, combining cornering and static loads. Under that rally case, the 4.70 lb OEM arm reached 344 MPa maximum stress and a minimum FOS of ~0.6, confirming that it exceeded yield and needed reinforcement.`,
+        description: `Established the OEM stress pattern under estimated worst-case driving conditions, combining cornering and static loads. Under that rally case, the 4.70 lb baseline model showed a representative stress of 330.9 MPa and a minimum representative FOS of 0.6883 (excluding singularities), indicating yielding under the assumed material and loading conditions.`,
       },
       {
         title: `Upgrade material & add cross-bracing`,
@@ -47,7 +47,7 @@ window.PORTFOLIO_CONTENT = {
       },
       {
         title: `Validate with FEA`,
-        description: `Re-ran the final design under the same worst-case load for a direct comparison. Maximum stress fell from 344 MPa to 197 MPa, minimum FOS rose from ~0.6 to ~2.3, and mass changed from 4.70 lb to 4.68 lb.`,
+        description: `Re-ran the final design under the same worst-case load for a direct comparison. The displayed representative stress values changed from 330.9 MPa to 197.5 MPa, minimum representative FOS (excluding singularities) rose from 0.6883 to 2.098, and mass changed from 4.70 lb to 4.68 lb.`,
       },
     ],
 
@@ -59,7 +59,7 @@ window.PORTFOLIO_CONTENT = {
       baselineTitle: `OEM baseline`,
       redesignLabel: `After`,
       redesignTitle: `Rally redesign`,
-      outcome: `43% lower maximum stress and a 3.8× higher factor of safety at effectively the same mass.`,
+      outcome: `40.3% lower displayed representative stress and 3.05× the baseline minimum representative FOS (excluding singularities), at effectively the same mass.`,
     },
   },
 
